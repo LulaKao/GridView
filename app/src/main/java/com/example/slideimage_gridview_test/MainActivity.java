@@ -32,5 +32,9 @@ public class MainActivity extends AppCompatActivity {
 
         gridAdapter = new GridAdapter(MainActivity.this,iconId,nameList);
         grid_recycler.setAdapter(gridAdapter);
+
+        //存入圖片
+
+
     }
 }
