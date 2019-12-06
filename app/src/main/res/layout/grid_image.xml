@@ -6,13 +6,14 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/GridImg"
+    <ImageButton
+        android:id="@+id/GridImgButton"
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginRight="10dp"
+        android:background="#00000000"
         tools:srcCompat="@tools:sample/avatars[3]" />
 
     <TextView

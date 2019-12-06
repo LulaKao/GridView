@@ -4,8 +4,11 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -42,11 +45,21 @@ public class GridAdapter extends RecyclerView.Adapter<GridAdapter.ViewHoler> {
     public class ViewHoler extends RecyclerView.ViewHolder {
         ImageView img;
         TextView txt;
+        ImageButton gridImgButton;
+        String txt_show;
 
         public ViewHoler(@NonNull View itemView) {
             super(itemView);
-            img = itemView.findViewById(R.id.GridImg);
+            img = itemView.findViewById(R.id.GridImgButton);
             txt = itemView.findViewById(R.id.GridTxt);
+            gridImgButton = itemView.findViewById(R.id.GridImgButton);
+
+            gridImgButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Toast.makeText(context,"成功點選："+getAdapterPosition(),Toast.LENGTH_SHORT).show();
+                }
+            });
         }
     }
 }
