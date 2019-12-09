@@ -8,7 +8,6 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -46,7 +45,6 @@ public class GridAdapter extends RecyclerView.Adapter<GridAdapter.ViewHoler> {
         ImageView img;
         TextView txt;
         ImageButton gridImgButton;
-        String txt_show;
 
         public ViewHoler(@NonNull View itemView) {
             super(itemView);

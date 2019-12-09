@@ -4,15 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.ImageButton;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
+
     RecyclerView grid_recycler;
     GridLayoutManager layoutManager;
     GridAdapter gridAdapter;
-
 
     private int iconId[]={R.drawable.action,R.drawable.all,R.drawable.all3,R.drawable.art,R.drawable.art2,R.drawable.new2,R.drawable.selfie,R.drawable.selfie2};
     private String nameList[]={"test1","test2","test3","test4","test5","test6","test7","test8"};
