@@ -14,7 +14,6 @@ public class MainActivity extends AppCompatActivity {
     private int iconId[]={R.drawable.action,R.drawable.all,R.drawable.all3,R.drawable.art,R.drawable.art2,R.drawable.new2,R.drawable.selfie,R.drawable.selfie2};
     private String nameList[]={"test1","test2","test3","test4","test5","test6","test7","test8"};
 
-    //@SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
